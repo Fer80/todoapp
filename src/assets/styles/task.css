@@ -1,0 +1,32 @@
+.task-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-container .material-icons {
+    color: #BDBDBD;
+    cursor: pointer;
+}
+
+.task-container > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-container input[type="checkbox"] {
+    accent-color: var(--color-primary);
+    height: 24px;
+    width: 24px;
+}
+
+.task-container .task {
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+}
+
+.task-container.completed .task {
+    text-decoration: line-through;
+}
